@@ -10,6 +10,9 @@
 
 int main() {
 
+    // 1. Escreva um código que defina um conjunto de constantes para representar os sete dias da semana:
+    // b) Usando #define
+
     printf("Domingo: %d\n", DOMINGO);
     printf("Segunda: %d\n", SEGUNDA);
     printf("Terça: %d\n", TERCA);

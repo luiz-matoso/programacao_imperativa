@@ -3,6 +3,10 @@
 typedef enum { DOMINGO, SEGUNDA, TERCA, QUARTA, QUINTA, SEXTA, SABADO } Dias;
 
 int main() {
+
+    // 4. Escreva um código que defina um tipo (usando #typedef) para representar os sete dias da semana e, ainda, defina uma variável desse novo tipo.
+
+    
     Dias hoje = QUINTA;
 
     switch (hoje) {
