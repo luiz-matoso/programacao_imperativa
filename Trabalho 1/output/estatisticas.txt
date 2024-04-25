@@ -1,0 +1,5 @@
+Quantidade de números positivos: 5
+Quantidade de números negativos: 2
+Quantidade de números igual a zero: 1
+Quantidade de números pares: 1
+Quantidade de números impares: 6
