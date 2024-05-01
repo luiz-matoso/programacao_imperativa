@@ -11,6 +11,8 @@ int main() {
 
     // ler primeira linha do arquivo e definir tamanho do vetor;
 
+    // [VIDEO] O programa começa lendo um arquivo chamado "dados.txt" que contém uma série de números. O programa começa abrindo este arquivo e os armazena em um vetor. Esse vetor tem um limite definido pela constante(#define) de 100 números, caso seja coloca mais que o limite ele irá printar um erro.
+
     arquivo = fopen("dados.txt", "r");
     if (arquivo == NULL) {
         printf("Erro ao abrir o arquivo.\n");
@@ -41,6 +43,8 @@ int main() {
     fclose(arquivo);
 
     // gerando o arquivo estatisticas.txt com os dados;
+
+    // [VIDEO] Com os dados que pegou do arquivo ele passa para a geração dos arquivos de saída, começando pelo arquivo "estatisticas.txt" que calcula algumas estatisticas como a quantidade de números positivos, negativos, iguais a zero, pares e ímpares. Esses resultados são imprimidos no arquivo.
 
     int qtdPositivos = 0;
     int qtdNegativos = 0;
@@ -83,6 +87,8 @@ int main() {
 
     // gerando o arquivo distintos.txt com os dados;
 
+    // [VIDEO] Depois disso ele gera outro arquivo chamado "distintos.txt" que é responsável por colocar nesse arquivo apenas os números distintos da entrada, ou seja, ele percorre o vetor e imprime apenas uma vez cada número, mesmo que haja repetição ele será mostrado apenas uma vez.
+
     int j;
     int distintos[Limite];
     int qtdDistintos = 0;
@@ -118,6 +124,8 @@ int main() {
 
     // gerando o arquivo ordenado.txt com os dados;
 
+    // [VIDEO] Em seguida, ele gera o arquivo chamado "ordenado.txt" que é responsável por colocar nesse arquivo os números de entrada ordenados usando um algoritimo de ordenação simples.
+
     int temp;
 
     arquivo = fopen("ordenado.txt", "w");
@@ -144,6 +152,8 @@ int main() {
 
     // gerando o arquivo distintos_ordenado.txt com os dados;
 
+    // [VIDEO] No final, ele irá gerar o último arquivo chamado "distintos_ordenado.txt", é utilizado o mesmo algoritimo de ordenação mas antes ele remove os números que são duplicados e devem aparecer uma vez só.
+
     arquivo = fopen("distintos_ordenado.txt", "w");
     if (arquivo == NULL) {
         printf("Erro ao abrir o arquivo.\n");
@@ -168,6 +178,7 @@ int main() {
 
     fclose(arquivo);
 
-
+    // [VIDEO] No trabalho foi usado a função 'fopen()' que é utilizada para abrir arquivos, que foi usada para ler os dados de entrada e para criar arquivos, que foi usada para criar os arquivos de saída. No trabalho, também, foi usado o 'for' para percorrer os elementos do vetor e realizar as operações em cada elemento.
+    
     return 0;
 }
