@@ -29,5 +29,3 @@ b. O vetor que armazena a sequência de números inteiros da entrada deve possui
 c. Caso a quantidade de números no arquivo de entrada seja maior que a
 capacidade do vetor, o programa deve ser interrompido e nenhum resultado deve
 ser produzido. <p>
-
-
